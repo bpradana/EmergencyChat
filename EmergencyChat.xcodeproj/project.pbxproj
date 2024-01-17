@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC44DEAC2B56831B00554B54 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44DEAB2B56831B00554B54 /* ChatView.swift */; };
+		AC44DEAE2B56833100554B54 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44DEAD2B56833100554B54 /* ChatRow.swift */; };
+		AC44DEB32B5683FC00554B54 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44DEB22B5683FC00554B54 /* StringExtension.swift */; };
+		AC44DEB52B56840E00554B54 /* CharacterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44DEB42B56840E00554B54 /* CharacterExtension.swift */; };
+		AC44DEB82B5685C400554B54 /* TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44DEB72B5685C400554B54 /* TextFieldStyle.swift */; };
 		AC88A5EC2B55364900AED9BA /* EmergencyChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88A5EB2B55364900AED9BA /* EmergencyChatApp.swift */; };
 		AC88A5EE2B55364900AED9BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88A5ED2B55364900AED9BA /* ContentView.swift */; };
 		AC88A5F02B55364B00AED9BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC88A5EF2B55364B00AED9BA /* Assets.xcassets */; };
 		AC88A5F32B55364B00AED9BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC88A5F22B55364B00AED9BA /* Preview Assets.xcassets */; };
+		AC88A5FA2B55365800AED9BA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88A5F92B55365800AED9BA /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC44DEAB2B56831B00554B54 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		AC44DEAD2B56833100554B54 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		AC44DEB22B5683FC00554B54 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		AC44DEB42B56840E00554B54 /* CharacterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExtension.swift; sourceTree = "<group>"; };
+		AC44DEB72B5685C400554B54 /* TextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyle.swift; sourceTree = "<group>"; };
+		AC44DEB92B57C9C100554B54 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AC88A5E82B55364900AED9BA /* EmergencyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmergencyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC88A5EB2B55364900AED9BA /* EmergencyChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyChatApp.swift; sourceTree = "<group>"; };
 		AC88A5ED2B55364900AED9BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC88A5EF2B55364B00AED9BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC88A5F22B55364B00AED9BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC88A5F92B55365800AED9BA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,9 +45,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC44DEAA2B56828A00554B54 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC88A5ED2B55364900AED9BA /* ContentView.swift */,
+				AC44DEAB2B56831B00554B54 /* ChatView.swift */,
+				AC44DEAD2B56833100554B54 /* ChatRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC44DEAF2B5683DA00554B54 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC44DEB22B5683FC00554B54 /* StringExtension.swift */,
+				AC44DEB42B56840E00554B54 /* CharacterExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC44DEB62B5685B500554B54 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				AC44DEB72B5685C400554B54 /* TextFieldStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		AC88A5DF2B55364900AED9BA = {
 			isa = PBXGroup;
 			children = (
+				AC44DEB92B57C9C100554B54 /* README.md */,
 				AC88A5EA2B55364900AED9BA /* EmergencyChat */,
 				AC88A5E92B55364900AED9BA /* Products */,
 			);
@@ -51,10 +92,13 @@
 		AC88A5EA2B55364900AED9BA /* EmergencyChat */ = {
 			isa = PBXGroup;
 			children = (
+				AC44DEB62B5685B500554B54 /* Styles */,
+				AC44DEAF2B5683DA00554B54 /* Extensions */,
+				AC44DEAA2B56828A00554B54 /* Views */,
 				AC88A5EB2B55364900AED9BA /* EmergencyChatApp.swift */,
-				AC88A5ED2B55364900AED9BA /* ContentView.swift */,
 				AC88A5EF2B55364B00AED9BA /* Assets.xcassets */,
 				AC88A5F12B55364B00AED9BA /* Preview Content */,
+				AC88A5F92B55365800AED9BA /* Model.swift */,
 			);
 			path = EmergencyChat;
 			sourceTree = "<group>";
@@ -137,7 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC44DEAC2B56831B00554B54 /* ChatView.swift in Sources */,
+				AC44DEB82B5685C400554B54 /* TextFieldStyle.swift in Sources */,
+				AC88A5FA2B55365800AED9BA /* Model.swift in Sources */,
+				AC44DEB32B5683FC00554B54 /* StringExtension.swift in Sources */,
+				AC44DEB52B56840E00554B54 /* CharacterExtension.swift in Sources */,
 				AC88A5EE2B55364900AED9BA /* ContentView.swift in Sources */,
+				AC44DEAE2B56833100554B54 /* ChatRow.swift in Sources */,
 				AC88A5EC2B55364900AED9BA /* EmergencyChatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
